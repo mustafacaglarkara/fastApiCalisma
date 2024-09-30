@@ -1,3 +1,4 @@
 uvicorn main:app --reload
+uvicorn app.main:app --reload
 fastapi dev main.py
 fastapi run main.py
