@@ -1,9 +1,6 @@
-from datetime import datetime
-from typing import Union
-from fastapi import FastAPI, Body
+from fastapi import FastAPI
 
 from app.controllers import book_controller
-from app.models.book_model import Book
 from app.controllers.book_controller import *
 
 app = FastAPI()

@@ -12,6 +12,8 @@ BOOKS= [
 def getAllBooks()->List[Book]:
     return BOOKS
 
-def createBook(book:Book)->Book:
-    BOOKS.append(book)
-    return book
+def createBook(book_request:Book)->Book:
+    new_book = Book(**book_request.dict())
+    BOOKS.append(new_book)
+    #BOOKS.append(book_request)
+    return new_book

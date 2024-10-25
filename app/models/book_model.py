@@ -1,4 +1,7 @@
-class Book:
+from pydantic import Field, BaseModel
+
+
+class Book():
     id:int
     title:str
     author:str
@@ -11,3 +14,4 @@ class Book:
         self.author = author
         self.description = description
         self.rating = rating
+
